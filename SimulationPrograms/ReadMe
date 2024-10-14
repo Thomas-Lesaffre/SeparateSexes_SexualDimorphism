@@ -1,0 +1,23 @@
+This folder contains the instructions to compile and run the C++ programs used to produce the simulation results presented in the article "The joint evolution of separate sexes and sexual dimorphism" published in JEB by Thomas Lesaffre, John R. Pannell and Charles Mullon.
+
+Programs were written by Thomas Lesaffre. The code of the four program share the same structure.
+
+(1) Description of the files:
+
+	- main.cpp: main file for the program, from which parameters are read and recursions are launched.
+	- recursion.cpp: file where the 'recursion' function, which performs the simulation, is written.
+	- functions.cpp: file where all the functions used within the 'recursion' are constructed.
+	- fichiers.cpp: file containing the functions that all reading parameters from an input file.
+	- ranbin.cpp: file containing the C++ recipes for sampling from various distributions (used only for the Gaussian here).
+	- mt.h: MersenneTwister random number generator.
+
+	All relevant files are extensively annotated and commented. If the reader has any question, they are welcome to e-mail T. Lesaffre at "thomas.lesaffre[at]unil.ch" or "thomaslesaffre.evolbiol[at]gmail.com"
+
+(2) How to compile the simulation program
+
+	To compile this program in C++11 from a Linux distribution (Ubuntu 22.04), as we did for the work presented in the article, use the command: 'g++ -std=c++11 -o ProgramName *.cpp'
+
+(3) How to run a simulation
+	
+	To run a simulation, you must first check your parameter file, which should be named 'par'. Each line is a parameter set, and it must start with an *, as shown in the provided example.
+	The parameter file should be in the folder in which you wish the output the be created. Then, placing yourself in this folder, you can run the simulation from terminal by typing './relative/path/to/ProgramName'.
