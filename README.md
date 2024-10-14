@@ -14,3 +14,4 @@ The _SimulationPrograms_ folder contains four simulation programs coded in C++11
 * _Simulations_HaploidRecombinationSuppression_: program described in Appendix B.1.3, where recombination evolves jointly with allelic effects at both loci. The program described in Appendix A.3 can be obtained from this program by setting the mutation rate parameter <code>par.ur</code> and the initial recombination rate <code>par.r0</code> to zero.
 * _Simulations_HaploidConditionalExpression_: program described in Appendix B.2.3 for the evolution of sex allocation-dependent expression of the conflict trait.
 * _Simulations_DiploidBaseline_: program described in Appendix E.1.2.1 for the joint evolution of dominance and allelic effects at the loci encoding sex allocation and the conflict trait in diploids.
+* _Simulations_DiploidConditionalExpression_: program described in Appendix B.2.3 for the evolution of sex allocation-dependent expression of the conflict trait in diploids.
